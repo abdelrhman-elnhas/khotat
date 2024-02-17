@@ -1,0 +1,26 @@
+#wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#content {
+  width: 100%;
+  background: var(--white);
+  padding: 90px 0 90px 0;
+  z-index: 100;
+}
+
+.articleImg {
+  overflow: hidden;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.post-text>pre {
+  font-family: "NebrasBold";
+  direction: rtl;
+  overflow: visible;
+  color: var(--sec-color);
+  font-size: 18px;
+}
