@@ -9,6 +9,25 @@
     <meta property="og:title" content="Khotat" />
     <meta property="og:type" content="website" />
     <title>KHOTAT FOR STRATEGIC MARKETING PLANNING SERVICES</title>
+    <!-- Fav Icon -->
+    <link
+      rel="icon"
+      sizes="180x180"
+      href="./images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css" />
     <!-- Font Awesome -->
@@ -17,7 +36,16 @@
     <link rel="stylesheet" href="./assets/Animate/css/animate.css" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="consultant.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+		<!-- TinyMCE -->
+		<script src="https://cdn.tiny.cloud/1/hsvesiefjpxn0r1nnxx2cviukgvtkqf3vjetylk260rfv6br/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+      tinymce.init({
+        selector: '#mytextarea'
+      });
+    </script>
+  </head>
   </head>
 
   <body>
@@ -44,42 +72,35 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-1">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link" aria-current="page" href="#"
                   ><i class="fa-solid fa-house ms-2"></i>الرئيسية</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#About"
-                  ><i class="fa-solid fa-circle-info ms-2"></i>عن الشركة</a
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa-solid fa-house ms-2"></i>المقالات</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#WhyUs"
-                  ><i class="fa-solid fa-chart-simple ms-2"></i>لماذا نحن ؟</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Services"
-                  ><i class="fa-solid fa-lightbulb ms-2"></i>الخـدمـات</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Articles"
-                  ><i class="fa-solid fa-newspaper ms-2"></i>آخر المقالات</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#Contact"
-                  ><i class="fa-solid fa-address-book ms-2"></i>تواصل معنـا</a
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="fa-solid fa-house ms-2"></i>الاستشارات</a
                 >
               </li>
             </ul>
+            <button class="sign-out">تسجيل خروج</button>
           </div>
         </div>
       </nav>
     </header>
 
     <main>
+      <section id="mainbg">
+        <div>
+          <div class="text-center">
+            <h2>أضف مقال</h2>
+          </div>
+        </div>
+      </section>
       <div
         class="contact-area wow fadeInUp"
         data-wow-delay="0.3s"
@@ -87,130 +108,57 @@
       >
         <div class="container">
           <div class="row contact">
-            <div class="col-lg-4 col-md-12">
-              <div class="contact-single-box">
-                <div class="contact-title">
-                  <h4>بيــانــات التــواصـــل</h4>
-                </div>
-                <div class="contact-items">
-                  <div
-                    class="contact-icon d-flex justify-content-center align-items-center"
-                  >
-                    <i class="fa-solid fa-mobile-screen-button fs-2"></i>
-                  </div>
-                  <div class="contact-content">
-                    <h4>رقـــم الــجــوال</h4>
-                    <h6>590258860 (996+)</h6>
-                  </div>
-                </div>
-                <div class="contact-items">
-                  <div
-                    class="contact-icon d-flex justify-content-center align-items-center"
-                  >
-                    <i class="fa-regular fa-envelope fs-2"></i>
-                  </div>
-                  <div class="contact-content">
-                    <h4>البــريــد الإلكترونـــي</h4>
-                    <h6>info@khotat.net</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div class="col-lg-8 col-md-12">
               <div class="contact-box">
                 <div class="contact-box-title">
-                  <h4>احــجـــز استــشـارتــك الآن</h4>
+                  <h4>أضـــف مقـــال</h4>
                 </div>
 
-                <form
-                  action="https://formspree.io/f/myyleorq"
-                  method="POST"
-                  id="it-form"
-                >
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                <form action="" method="POST" id="it-form">
+                  <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12">
                       <div class="form-box">
                         <input
                           type="text"
                           name="name"
-                          placeholder="الاســــم"
+                          placeholder="عنوان المقال"
                         />
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-12 col-md-12 mt-5">
                       <div class="form-box">
-                        <input
-                          type="text"
-                          name="email"
-                          placeholder="البــريــد الإلكـــتروني"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="form-box">
-                        <input
-                          type="text"
-                          name="phone"
-                          placeholder="رقــم الــجــوال"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="form-box">
-                        <input
-                          type="text"
-                          name="website"
-                          placeholder="المــوقع الإلكـــتروني"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="form-box">
-                        <input
-                          type="text"
-                          name="company-name"
-                          placeholder="اســـم الشــركة أو المشـــروع"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="form-box">
-                        <input
-                          type="text"
-                          name="company-type"
-                          placeholder="نــوع الشــركة أو المشـــروع"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="form-box">
-                        <input
-                          type="text"
-                          name="position"
-                          placeholder="منــصبــك داخــل الشــركة أو المشـــروع"
-                        />
+                        <h3>ضع صورة للمقال</h3>
+                        <div class="drag-area">
+                          <div class="icon">
+                            <i class="fas fa-images"></i>
+                          </div>
+                          <span class="header">اسحب و اسقط</span>
+                          <span class="header"
+                            >أو <span class="button">تصفح هنا</span></span
+                          >
+                          <input type="file" hidden />
+                          <span class="support">يدعم صيغ : JPEG, JPG, PNG</span>
+                        </div>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12">
                       <div class="form-box">
-                        <textarea
-                          name="messege"
-                          id="messege"
-                          cols="30"
-                          rows="10"
-                          placeholder="ما الذي تتمناه عند كتابتك الخطة التسويقية مع خٌطط ؟"
-                        ></textarea>
+                        <label class="check-container"
+                          >اظهر في الصفحة الرئيسية
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
                       </div>
-                    </div>
-                    <div class="col-lg-12 col-md-12">
-                      <div class="form-box-button">
-                        <button type="Submit">إتـــمـام الـــحـــجـــز</button>
+                      <div class="col-lg-12 col-md-12">
+												<textarea id="mytextarea">اكتب محتوى المقال هنا</textarea>
+											</div>
+				
+                      <div class="form-box-button mt-5">
+                        <button type="Submit">أضـــف مقـــال</button>
                       </div>
                     </div>
                   </div>
                 </form>
-                <div id="status"></div>
               </div>
             </div>
           </div>
@@ -300,17 +248,22 @@
     <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
     <!-- FontAwesome Script File -->
     <script src="assets/FontAwesome/js/all.min.js"></script>
-    <!-- WOW JS -->
-    <script src="./assets/Animate/js/wow.min.js"></script>
+    <!-- DateTable Script Files -->
+    <script src="assets/datetable/jquery-3.7.0.js"></script>
+    <script src="assets/datetable/jquery.dataTables.min.js"></script>
+    <script src="assets/datetable/dataTables.bootstrap5.min.js"></script>
     <script>
-      wow = new WOW({
-        boxClass: "wow", // default
-        animateClass: "animated", // default
-        offset: 0, // default
-        mobile: true, // default
-        live: true, // default
-      });
-      wow.init();
+      var table = new DataTable("#example");
     </script>
+    <!-- Script File -->
+    <script src="addArticleDashboard.js"></script>
+
+    <!-- NicEdit Text Editor -->
+		<script>
+  tinymce.init({
+    selector: 'textarea',
+  });
+</script>
+
   </body>
 </html>

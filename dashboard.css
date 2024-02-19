@@ -1,0 +1,357 @@
+#mainbg {
+	background: url("./images/services.jpg");
+	height: 300px;
+	color: var(--white);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#mainbg div:not(.text-center) {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#mainbg div h2 {
+	font-size: 45px;
+	margin-bottom: 25px;
+}
+
+.sign-out {
+	padding: 7px 15px;
+	background-color: var(--first-color);
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	color: var(--white);
+	transition: all 0.5s;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+.sign-out:hover {
+	background-color: var(--sec-color);
+}
+
+/* models */
+.modal-header .btn-close {
+	margin: -0.5rem auto -0.5rem -0.5rem;
+}
+
+.modal-title {
+	color: var(--first_color);
+	font-weight: bold;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.modal-footer {
+	border-top: none;
+}
+
+
+/*datetables*/
+.dataTables_length label,
+.dataTables_filter label {
+	width: 100%;
+	color: var(--first_color);
+	font-weight: bold;
+	font-size: 23px;
+	text-align: center;
+}
+
+.dataTables_filter input {
+	background-color: #fff;
+	border: 1px solid #ced4da;
+}
+
+.col-md-6 {
+	padding: 0;
+}
+
+.pagination {
+	justify-content: flex-end;
+}
+
+.page-link {
+	color: var(--sec-color);
+}
+
+.page-item.active .page-link {
+	background-color: var(--sec-color);
+	border-color: var(--sec-color);
+}
+
+input[type="file"] {
+	width: 5% !important;
+	height: auto;
+	margin: 0;
+	padding: 14px 8px;
+}
+
+.input-group {
+	width: 90%;
+	margin: 20px auto;
+}
+
+
+/* Modals */
+
+.modal-body p {
+	font-size: 20px;
+	padding: 10px 15px;
+	background-color: #d4d4d4;
+	color: var(--sec-color);
+}
+
+.modal-body div {
+	color: var(--first-color);
+	font-size: 18px;
+	padding: 5px 10px;
+}
+
+
+/* Add Articles */
+.contact-area {
+	padding: 74px 0 74px;
+}
+
+.contact-box {
+	margin-top: 30px;
+}
+
+.contact-box-title h4 {
+	font-size: 48px;
+	line-height: 60px;
+	color: var(--sec-color);
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+
+.row.contact {
+	filter: drop-shadow(0px 1px 25.5px rgba(0, 0, 0, 0.2));
+	background-color: var(--white);
+	padding: 110px 20px 70px;
+	border-radius: 10px;
+	-webkit-filter: drop-shadow(0px 1px 25.5px rgba(0, 0, 0, 0.2));
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.contact-single-box {
+	background: var(--sec-color);
+	padding: 60px 18px 30px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.contact-single-box {
+	padding: 30px 18px 30px;
+}
+
+.contact-title h4 {
+	font-size: 25px;
+	color: var(--white);
+}
+
+.form-box input[type="text"] {
+	background-color: #d4d4d4;
+	color: var(--sec-color);
+	padding: 20px 30px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border: none;
+	width: 100%;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="text"]:active {
+	outline: none;
+	border: 2px solid var(--first-color);
+	background-color: var(--white);
+}
+
+
+.form-box-button button {
+	width: 210px;
+	height: 60px;
+	border-radius: 3px;
+	background-color: var(--first-color);
+	border: 0;
+	outline: 0;
+	font-size: 19px;
+	font-weight: 500;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+	transition: .5s;
+}
+
+.form-box-button button::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	transform: scale(0.0, 1);
+	opacity: 0;
+	border-radius: 3px;
+	z-index: -1;
+	transition: .5s;
+}
+
+.form-box-button button:hover::before {
+	background: var(--sec-color);
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+.form-box-button.inner {
+	text-align: center;
+}
+
+
+
+/* Upload Image  */
+
+.drag-area {
+	height: 200px;
+	border: 3px dashed var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 10px auto;
+}
+
+h3 {
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.drag-area .icon {
+	font-size: 50px;
+	color: var(--sec-color);
+}
+
+.drag-area .header {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--sec-color);
+}
+
+.drag-area .support {
+	font-size: 12px;
+	color: var(--black);
+	margin: 10px 0 15px 0;
+}
+
+.drag-area .button {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--first-color);
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.drag-area.active {
+	border: 2px solid var(--sec-color);
+}
+
+.drag-area img {
+	width: 20%;
+	height: 20%;
+	object-fit: contain;
+}
+
+/* CheckBox */
+
+
+.check-container {
+	display: block;
+	position: relative;
+	padding-right: 35px;
+	margin-block: 20px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #d4d4d4;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input~.checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked~.checkmark {
+	background-color: var(--sec-color);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked~.checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}

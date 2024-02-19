@@ -1,0 +1,114 @@
+*,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	direction: rtl;
+	overflow-x: hidden;
+	caret-color: var(--first-color);
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+main {
+	width: 40%;
+	text-align: center;
+	padding: 30px;
+	min-height: 100vh;
+}
+
+
+@media (max-width:800px) {
+	main {
+		width: 80%;
+	}
+}
+
+
+input:not([type="radio"]),
+select,
+textarea {
+	width: 100%;
+	padding: 20px 50px;
+	border: none;
+	background-color: #d4d4d4;
+	color: var(--sec-color);
+	text-align: right;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: var(--first-color);
+}
+
+textarea {
+	height: auto;
+	padding-top: 15px;
+}
+
+div {
+	margin: 20px 0;
+}
+
+.original-button {
+	text-decoration: none;
+	color: var(--sec-color);
+	font-size: 18px;
+	border-radius: 10px;
+	display: inline-block;
+	transition: 0.5s;
+	background-color: var(--first-color);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	padding: 10px 15px;
+}
+
+.original-button:hover {
+	color: var(--white);
+	background-color: var(--sec-color);
+}
+
+
+
+a {
+	text-decoration: none;
+	color: var(--a_color);
+	font-weight: bold;
+	transition: color 0.5s ease-in-out;
+}
+
+a:hover {
+	color: var(--sec-color);
+}
+
+
+@media (max-width:400px) {
+
+	input:not([type="radio"]),
+	select,
+	textarea {
+		padding: 20px 25px !important;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		font-size: 12px;
+	}
+
+	.original-button {
+		font-size: 15px;
+	}
+}

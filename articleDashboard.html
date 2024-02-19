@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F49334" />
+    <meta name="author" content="Master Code" />
+    <meta name="MobileOptimized" content="320" />
+    <meta property="og:title" content="Khotat" />
+    <meta property="og:type" content="website" />
+    <title>KHOTAT FOR STRATEGIC MARKETING PLANNING SERVICES</title>
+    <!-- Fav Icon -->
+    <link
+      rel="icon"
+      sizes="180x180"
+      href="./images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css" />
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="./assets/Animate/css/animate.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="d-flex justify-content-between mb-5 mb-md-1">
+      <nav class="navbar navbar-expand-lg">
+        <div
+          class="container d-flex align-items-center justify-content-between gap-5"
+        >
+          <a class="navbar-brand" href="#">
+            <img src="images/logoColored.png" width="100" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-1">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="fa-solid fa-house ms-2"></i>الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa-solid fa-house ms-2"></i>المقالات</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="fa-solid fa-house ms-2"></i>الاستشارات</a
+                >
+              </li>
+            </ul>
+            <button class="sign-out">تسجيل خروج</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="mainbg">
+        <div>
+          <div class="text-center">
+            <h2>جميع المقالات</h2>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#addnew"
+            >
+              اضافة مقال
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="main">
+        <div class="container pt-5 pb-5">
+          <div class="table-responsive">
+            <table
+              id="example"
+              class="table table-striped text-center"
+              style="width: 100%"
+            >
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>عنوان المقال</th>
+                  <th>تاريخ المقالات</th>
+                  <th>العمليات</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>مقال 1</td>
+                  <td>1 يناير 2024</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success mb-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#edit"
+                    >
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger mb-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#remove"
+                    >
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>مقال 2</td>
+                  <td>20 فبراير 2024</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-success mb-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#edit"
+                    >
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger mb-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#remove"
+                    >
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="Footer">
+      <div class="container my-5">
+        <div class="text-center text-lg-start text-white pt-5">
+          <div class="text-center text-md-end mt-5">
+            <div class="row mt-3">
+              <div class="links col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold">الأقســام</h6>
+                <p>
+                  <a href="#" class="text-white">الرئيسية</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white">عن الشــركــة</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white">لماذا نــحن ؟</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white">الخـدمــات</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white">تواصــل معـنــا</a>
+                </p>
+              </div>
+
+              <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold">أهم الصفحــات</h6>
+                <p>
+                  <a href="#" class="text-white">المقــالات</a>
+                </p>
+                <p>
+                  <a href="#" class="text-white">احجــز استــشـارتــك</a>
+                </p>
+              </div>
+
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold">تواصـــل معــنــــا</h6>
+                <p>
+                  <i class="fa-solid fa-location-crosshairs"></i> المملكة
+                  العربية المتحدة
+                </p>
+                <p>
+                  <a href="mailto:info@khotat.net" class="footer-links"
+                    ><i class="fa-regular fa-envelope"></i> info@khotat.net</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://www.instagram.com/khotat.co"
+                    class="footer-links"
+                    ><i class="fa-brands fa-instagram"></i> khotat.co</a
+                  >
+                </p>
+                <p dir="ltr">
+                  <a class="footer-links" href="https://wa.me/966590258860"
+                    >+966 59 025 8860
+                    <i class="fa-solid fa-mobile-screen-button ms-1"></i
+                  ></a>
+                </p>
+              </div>
+
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 pt-4">
+                <img
+                  src="./images/logoWhite.png"
+                  class="img-fluid"
+                  alt="Khotat Logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom text-center p-3" dir="ltr">
+        © 2024 Copyright
+        <a href="https://www.facebook.com/masterc0de">Master Code</a>. All
+        Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- models -->
+    <div
+      class="modal fade"
+      id="remove"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">حذف المقال</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <form action="">
+              <h3>هل حقا تريد حذف المقال ؟</h3>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              اغلاق
+            </button>
+            <button type="button" class="btn btn-danger">حذف</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap Script File -->
+    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- FontAwesome Script File -->
+    <script src="assets/FontAwesome/js/all.min.js"></script>
+    <script src="assets/datetable/jquery-3.7.0.js"></script>
+    <script src="assets/datetable/jquery.dataTables.min.js"></script>
+    <script src="assets/datetable/dataTables.bootstrap5.min.js"></script>
+    <script>
+      var table = new DataTable("#example");
+    </script>
+  </body>
+</html>
