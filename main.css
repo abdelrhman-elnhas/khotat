@@ -884,32 +884,3 @@ form textarea {
 }
 
 /* End footer Settings */
-
-
-
-
-
-/* 
-
-.cutTop,
-.cutBottom {
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.cutTop {
-  background-color: var(--first-color);
-  clip-path: polygon(0 0, 100% 0%, 100% 57%, 0 19%);
-  top: -100px;
-}
-
-.cutBottom {
-  background-color: #d4d4d4;
-  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 60%);
-  bottom: -50px;
-}
-
-#Services>.container {
-  z-index: 1;
-} */
