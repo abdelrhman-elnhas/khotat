@@ -5,12 +5,17 @@
 
 .article-content {
 	padding: 30px;
+	margin-bottom: 15px;
 }
 
-.article-content img {
-	margin-bottom: 15px;
-	width: 770px;
-	height: 397px;
+.article-content .image {
+	margin-bottom: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	overflow: hidden;
 }
 
 .article-content ul li {
