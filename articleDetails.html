@@ -45,7 +45,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-1">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="index.html"
                   ><i class="fa-solid fa-house ms-2"></i>الرئيسية</a
                 >
               </li>
@@ -66,7 +66,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#Articles"
-                  ><i class="fa-solid fa-newspaper ms-2"></i>آخر المقالات</a
+                  ><i class="fa-solid fa-newspaper ms-2"></i>أهم المقالات</a
                 >
               </li>
               <li class="nav-item">
@@ -186,6 +186,7 @@
         </div>
       </section>
     </main>
+
     <footer id="Footer">
       <div class="container my-5">
         <div class="text-center text-lg-start text-white pt-5">
@@ -194,29 +195,39 @@
               <div class="links col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold">الأقســام</h6>
                 <p>
-                  <a href="#" class="text-white">الرئيسية</a>
+                  <a href="index.html" class="text-white">الرئيسية</a>
                 </p>
                 <p>
-                  <a href="#" class="text-white">عن الشــركــة</a>
+                  <a href="index.html#About" class="text-white"
+                    >عن الشــركــة</a
+                  >
                 </p>
                 <p>
-                  <a href="#" class="text-white">لماذا نــحن ؟</a>
+                  <a href="index.html#WhyUs" class="text-white"
+                    >لماذا نــحن ؟</a
+                  >
                 </p>
                 <p>
-                  <a href="#" class="text-white">الخـدمــات</a>
+                  <a href="index.html#Services" class="text-white"
+                    >الخـدمــات</a
+                  >
                 </p>
                 <p>
-                  <a href="#" class="text-white">تواصــل معـنــا</a>
+                  <a href="index.html#Contact" class="text-white"
+                    >تواصــل معـنــا</a
+                  >
                 </p>
               </div>
 
               <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 class="text-uppercase fw-bold">أهم الصفحــات</h6>
                 <p>
-                  <a href="#" class="text-white">المقــالات</a>
+                  <a href="articles.html" class="text-white">المقــالات</a>
                 </p>
                 <p>
-                  <a href="#" class="text-white">احجــز استــشـارتــك</a>
+                  <a href="consultant.html" class="text-white"
+                    >احجــز استــشـارتــك</a
+                  >
                 </p>
               </div>
 
@@ -263,5 +274,22 @@
         Rights Reserved.
       </div>
     </footer>
+
+    <!-- Bootstrap Script File -->
+    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- FontAwesome Script File -->
+    <script src="assets/FontAwesome/js/all.min.js"></script>
+    <!-- WOW JS -->
+    <script src="./assets/Animate/js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
+      });
+      wow.init();
+    </script>
   </body>
 </html>
