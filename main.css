@@ -727,6 +727,7 @@ header ul li a:hover {
 #Contact {
 	min-height: 100vh;
 	overflow: hidden;
+	background-color: #fff;
 }
 
 
@@ -821,6 +822,7 @@ form textarea {
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
+
 }
 
 .contactImage>img {
@@ -831,7 +833,7 @@ form textarea {
 	-o-border-radius: 20px;
 }
 
-.contactImage::before {
+/* .contactImage::before {
 	position: absolute;
 	content: "";
 	width: 100%;
@@ -846,7 +848,7 @@ form textarea {
 	-moz-border-radius: 20px;
 	-ms-border-radius: 20px;
 	-o-border-radius: 20px;
-}
+} */
 
 @media (max-width:1300px) {
 	.contactImage::before {
