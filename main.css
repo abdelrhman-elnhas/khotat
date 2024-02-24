@@ -198,7 +198,7 @@ header ul li a:hover {
 
 .heroSubhead {
 	color: var(--black);
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 36px;
 }
 
@@ -350,7 +350,7 @@ header ul li a:hover {
 
 
 .about-left-item .big-image {
-	max-width: 386px;
+	max-width: 450px;
 	position: relative;
 	z-index: 1;
 }
@@ -727,7 +727,6 @@ header ul li a:hover {
 #Contact {
 	min-height: 100vh;
 	overflow: hidden;
-	background-color: #fff;
 }
 
 
@@ -749,10 +748,10 @@ form .title::after {
 }
 
 form .form-control {
-	background-color: #d4d4d4;
+	background-color: #fff;
 	border-radius: 10px;
 	border: none;
-	box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+	/* box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11); */
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
@@ -766,14 +765,13 @@ form .message .form-control {
 
 form .form-control:focus {
 	border: 3px solid var(--sec-color);
-	background-color: var(--white);
-	box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+	background-color: #fff;
+	box-shadow: none !important;
 }
 
 form ::placeholder {
-	font-weight: 600;
 	font-size: 16px;
-	color: #838388;
+	color: #D4D4D4 !important;
 	position: relative;
 	left: 0;
 }

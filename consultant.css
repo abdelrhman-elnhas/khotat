@@ -10,7 +10,6 @@
 	font-size: 48px;
 	line-height: 60px;
 	color: var(--sec-color);
-	font-weight: 600;
 	margin-bottom: 35px;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .contact-single-box {
-	background: var(--sec-color);
+	background: transparent;
 	padding: 60px 18px 30px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -41,12 +40,19 @@
 }
 
 .contact-title h4 {
-	font-size: 25px;
-	color: var(--white);
+	font-size: 20px;
+	color: var(--sec-color);
 }
 
 .contact-items {
 	padding: 15px 8px;
+	border-radius: 10px;
+	margin-block: 20px;
+	background-color: var(--first-color);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 
 .contact-icon {
@@ -63,6 +69,11 @@
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+}
+
+.contact-icon i,
+.contact-icon svg {
+	color: var(--first-color);
 }
 
 @media (max-width:768px) {
@@ -103,14 +114,14 @@
 	}
 
 	.contact-box-title h4 {
-		font-size: 24px;
+		font-size: 20px;
 		margin-bottom: 0px !important;
 	}
 }
 
 .contact-content h4,
 .contact-content h6 {
-	font-size: 20px;
+	font-size: 16px;
 	color: var(--white);
 }
 
