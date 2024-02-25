@@ -9,14 +9,15 @@
 	--white: #eeeeee;
 }
 
-@font-face {
+/* @font-face {
 	font-family: "NebrasBold";
 	src: url('./assets/webfonts/NebrasBold.otf');
-}
+} */
 
 * {
 	box-sizing: border-box;
-	font-family: "NebrasBold";
+	/* font-family: "NebrasBold"; */
+	font-family: "Cairo", sans-serif;
 }
 
 html {
@@ -31,7 +32,8 @@ body {
 }
 
 body {
-	font-family: "NebrasBold";
+	/* font-family: "NebrasBold"; */
+	font-family: "Cairo", sans-serif;
 	direction: rtl;
 	overflow-x: hidden;
 	background-color: var(--white);
@@ -89,6 +91,7 @@ header ul li a {
 	display: inline-block;
 	color: var(--sec-color) !important;
 	margin-left: 15px;
+	font-weight: 700;
 }
 
 header ul li a.active,
@@ -189,6 +192,7 @@ header ul li a:hover {
 
 .heroHeadline {
 	color: var(--sec-color);
+	font-weight: 900;
 }
 
 .khotat {
@@ -271,6 +275,7 @@ header ul li a:hover {
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px; */
+	font-weight: 700;
 	padding: 12px 25px;
 	border: none;
 	color: var(--white);
@@ -375,7 +380,7 @@ header ul li a:hover {
 #WhyUs {
 	background-color: var(--first-color);
 	position: relative;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	z-index: 0;
 	padding: 200px 0 80px 0;
 	overflow: hidden;
@@ -407,6 +412,11 @@ header ul li a:hover {
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	overflow: hidden;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
 }
 
 .why-title {
@@ -417,6 +427,7 @@ header ul li a:hover {
 	font-size: 48px;
 	color: var(--white);
 	margin-bottom: 20px;
+	font-weight: 700;
 }
 
 .why-title h4 {
@@ -503,9 +514,18 @@ header ul li a:hover {
 	padding: 55px 40px 0;
 }
 
+.why-box:hover {
+	transform: translateY(-6px);
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	-o-transform: translateY(-6px);
+}
+
 .box-content h4 {
 	font-size: 24px;
 	line-height: 24px;
+	font-weight: 900;
 	color: var(--sec-color);
 	text-decoration: none;
 	transition: all 500ms linear;
@@ -583,6 +603,7 @@ header ul li a:hover {
 
 #Services h2 {
 	font-size: 36px;
+	font-weight: 700;
 	color: var(--first-color);
 	position: relative;
 }
@@ -625,6 +646,7 @@ header ul li a:hover {
 
 .consulte h4 {
 	font-size: 35px;
+	font-weight: 700;
 	line-height: 70px;
 }
 
@@ -639,6 +661,7 @@ header ul li a:hover {
 	padding: 10px 15px;
 	border: none;
 	cursor: pointer;
+	font-weight: 700;
 	background-color: var(--first-color);
 	color: var(--white);
 	border-radius: 6px;
@@ -697,6 +720,7 @@ header ul li a:hover {
 
 .more>button {
 	padding: 15px 20px;
+	font-weight: 700;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -734,6 +758,7 @@ form .title {
 	color: var(--first-color);
 	margin-bottom: 50px;
 	width: fit-content;
+	font-weight: 700;
 }
 
 form .title::after {
