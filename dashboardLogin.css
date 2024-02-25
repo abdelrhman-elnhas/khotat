@@ -49,7 +49,8 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-	color: var(--first-color);
+	color: var(--first-color) !important;
+	font-weight: 600;
 }
 
 textarea {
@@ -63,8 +64,9 @@ div {
 
 .original-button {
 	text-decoration: none;
-	color: var(--sec-color);
+	color: var(--white);
 	font-size: 18px;
+	font-weight: 700;
 	border-radius: 10px;
 	display: inline-block;
 	transition: 0.5s;
@@ -74,6 +76,7 @@ div {
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 	padding: 10px 15px;
+	border: none;
 }
 
 .original-button:hover {
