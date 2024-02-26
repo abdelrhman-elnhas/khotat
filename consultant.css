@@ -155,13 +155,6 @@
 	outline: none;
 }
 
-.form-box input::placeholder {
-	color: #151554b2;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-}
-
 .form-box textarea {
 	width: 100%;
 	height: 145px;
@@ -170,13 +163,6 @@
 	border-radius: 3px;
 	padding: 20px 17px;
 	margin-bottom: 25px;
-}
-
-.form-box textarea::placeholder {
-	color: #151554b2;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
 }
 
 .form-box-button button {

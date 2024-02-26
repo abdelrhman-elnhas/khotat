@@ -9,14 +9,8 @@
 	--white: #eeeeee;
 }
 
-/* @font-face {
-	font-family: "NebrasBold";
-	src: url('./assets/webfonts/NebrasBold.otf');
-} */
-
 * {
 	box-sizing: border-box;
-	/* font-family: "NebrasBold"; */
 	font-family: "Cairo", sans-serif;
 }
 
@@ -32,7 +26,6 @@ body {
 }
 
 body {
-	/* font-family: "NebrasBold"; */
 	font-family: "Cairo", sans-serif;
 	direction: rtl;
 	overflow-x: hidden;
@@ -80,6 +73,7 @@ header {
 	height: 70px;
 	position: relative;
 	background-color: transparent;
+	z-index: 10000;
 }
 
 .navbar {
@@ -260,21 +254,6 @@ header ul li a:hover {
 }
 
 .heroCTA {
-	/* background-color: var(--first-color);
-	padding: 10px 20px;
-	border-radius: 10px;
-	border: 3px solid var(--sec-color);
-	color: var(--sec-color);
-	transition: all 0.6s;
-	-webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	-ms-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	font-size: 18px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px; */
 	font-weight: 700;
 	padding: 12px 25px;
 	border: none;
@@ -291,12 +270,9 @@ header ul li a:hover {
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
-
 }
 
 .heroCTA:hover {
-	/* background-color: transparent; */
-
 	box-shadow: 0 0.5em 0.5em -0.4em var(--first-color);
 	transform: translateY(-4px);
 	-webkit-transform: translateY(-4px);
@@ -308,11 +284,6 @@ header ul li a:hover {
 /* End Hero Settings */
 
 /* Start About Settings */
-
-
-
-
-/* End About Settings */
 #About {
 	overflow: hidden;
 	position: relative;
@@ -375,8 +346,10 @@ header ul li a:hover {
 	margin-top: 30px;
 }
 
-/* Start WhyUs Settings*/
+/* End About Settings */
 
+
+/* Start WhyUs Settings*/
 #WhyUs {
 	background-color: var(--first-color);
 	position: relative;
@@ -434,58 +407,11 @@ header ul li a:hover {
 	color: var(--sec-color);
 }
 
-.box-thumb {
-	position: relative;
-	z-index: 1;
-}
-
-.box-thumb::before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 0;
-	content: "";
-	background-color: #15155495;
-	transition: all 500ms ease;
-	z-index: 1;
-}
 
 .why-box:hover .box-thumb::before {
 	height: 100%;
 }
 
-.box-thumb img {
-	width: 100%;
-	aspect-ratio: 3/2;
-}
-
-.box-icon {
-	position: absolute;
-	bottom: -17px;
-	right: 20px;
-	width: 98px;
-	height: 88px;
-	border-radius: 5px;
-	filter: drop-shadow(0px 1px 25.5px rgba(0, 0, 0, 0.11));
-	background-color: var(--white);
-	text-align: center;
-	line-height: 83px;
-	z-index: 1;
-}
-
-.box-icon::before {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 3px;
-	background: var(--sec-color);
-	bottom: 0;
-	left: 0;
-	border-radius: 5px 5px 0 0;
-	transition: all 700ms ease;
-}
 
 .why-box:hover .box-icon::before {
 	height: 100%;
@@ -569,7 +495,6 @@ header ul li a:hover {
 }
 
 /* End WhyUs Settings */
-
 
 
 /* Start Services Section */
@@ -713,7 +638,6 @@ header ul li a:hover {
 
 
 /* Start Articles Section */
-
 #Articles {
 	margin-top: 150px;
 }
@@ -747,12 +671,12 @@ header ul li a:hover {
 
 /* End Articles Section */
 
+
 /* Start Contact Section */
 #Contact {
 	min-height: 100vh;
 	overflow: hidden;
 }
-
 
 form .title {
 	color: var(--first-color);
@@ -857,23 +781,6 @@ form textarea {
 	-o-border-radius: 20px;
 }
 
-/* .contactImage::before {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 500px;
-	left: -50%;
-	bottom: -85px;
-	z-index: -1;
-	background-color: var(--sec-color);
-	opacity: 1;
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-ms-border-radius: 20px;
-	-o-border-radius: 20px;
-} */
-
 @media (max-width:1300px) {
 	.contactImage::before {
 		bottom: -120px;
@@ -898,8 +805,8 @@ form textarea {
 	}
 }
 
-
 /* End Contact Section */
+
 
 /* Start Footer Settings */
 #Footer {
